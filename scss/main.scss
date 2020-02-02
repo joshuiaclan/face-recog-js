@@ -1,4 +1,4 @@
-$primaryColor: gray;
+$primaryColor: lightgray;
 
 @function checkColor($color) {
     @if (lighten(color) > 40 ){
@@ -14,4 +14,16 @@ $primaryColor: gray;
     -webkit-transition: .7s;
 }
 
-
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $primaryColor;
+}
+canvas {
+    position: absolute;
+}
